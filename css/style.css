@@ -1,0 +1,417 @@
+﻿* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+body, html {
+width: 100%;
+height: 100%;
+}
+
+body {
+background-color: #fafafa;
+font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+
+header {
+width: 100%;
+padding: 10px 0.5% 0px 0.5%;
+background: #FFA07A;
+float: left;
+position: fixed;
+}
+
+header #logo {
+color: #00008B;
+cursor: pointer;
+}
+
+header #logo span {
+font-size: 1.7em;
+line-height: 45px;
+margin-left: 40px;
+font-family: 'Suez One', serif;
+}
+
+min-width: 701px {
+#logo {
+float: left;
+width: 30%;
+font-size: 1.3em;
+}
+
+#about {
+float: right;
+width: 67%;
+}
+}
+
+max-width: 700px {
+#logo {
+margin-top: 15px;
+width: 100%;
+font-size: 1.5em;
+}
+
+#about {
+float: left;
+width: 100%;
+}
+}
+
+#about {
+text-align: center;
+font-size: 1.1em;
+line-height: 40px;
+margin-bottom: 10px;
+}
+
+#about > a {color: #000000}
+
+#about > a:hover {
+color: #000000;
+text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+margin-right: 7%;
+}
+
+/* Стили для фиксированной шапки */
+
+.fixed {
+z-index: 5000;
+background-color: #C71585;
+border-bottom: 5px ;
+}
+
+header.fixed #logo {
+color: #000080;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #FFC0CB}
+
+/* Главный блок на сайте */
+
+#top {
+width: 100%;
+background-image: url("../img/rofllogo1.jpg");
+background-blend-mode: multiply;
+background-size: cover;
+text-align: center;
+
+}
+
+min-width: 1001px {
+#top {
+font-size: 2.5em;
+height: 800px;
+}
+}
+
+max-width: 1000px and (min-width: 651px) {
+#top {
+font-size: 2em;
+height: 400px;
+}
+}
+
+max-width: 650px {
+#top {
+font-size: 1.3em;
+padding-top: 10px;
+height: 600px;
+}
+}
+
+max-width: 450px {
+#top {
+font-size: 0.9em;
+}
+}
+
+#top h1 {
+padding-top: 10%;
+}
+
+#top h3 {
+color: #000000;
+}
+
+
+
+
+
+/* Блок с возможностями */
+
+
+
+#product
+{
+background: #fff2ff;
+margin-top: 30px;
+display: inline-block;
+width: 21.322%;
+margin-left: 2%;
+vertical-align: top;
+text-align: center;
+}
+.info-wrapper
+{
+display: flex;
+padding-top: 2px;
+padding-bottom: 60px;
+text-shadow: 0px 0px 1px rgba(10, 10, 10);
+}
+
+.info
+{
+margin-left: 12%;
+width: 100%;
+margin-right: 10%;
+}
+#info_h
+{
+font-family: Trebuchet MS, Helvetica;
+color: #00BFFF;
+}
+#info_g
+{
+font-family: Trebuchet MS, Helvetica;
+color: #FF69B4;
+}
+
+
+
+
+
+
+
+
+
+* {
+box-sizing: border-box;
+}
+.product-item {
+width: 300px;
+text-align: center;
+margin: 0 auto;
+border-bottom: 2px solid #F5F5F5;
+background: white;
+font-family: "Open Sans";
+transition: .3s ease-in;
+}
+.product-item img {
+display: block;
+width: 100%;
+}
+.product-list {
+background: #fafafa;
+padding: 15px 0;
+}
+.product-list h3 {
+font-size: 18px;
+font-weight: 400;
+color: #444444;
+margin: 0 0 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Блок с преимуществами */
+
+#overview {
+float: left;
+background-image: url("../img/rofllogo1.jpg");
+border-top: 2px solid silver;
+background-blend-mode: multiply;
+background-size: cover;
+background-attachment: fixed;
+padding: 100px 0;
+width: 100%;
+text-align: center;
+}
+
+#overview h2 {font-size: 4em}
+#overview h4 {color: #000000; font-size: 2em}
+
+min-width: 561px {
+#overview h2 {font-size: 4em}
+}
+
+max-width: 560px {
+#overview h2 {font-size: 3em}
+}
+
+#overview .img {
+float: left;
+width: 30%;
+margin-right: 5%;
+margin-top: 50px;
+}
+
+#overview .img:nth-child(odd) {
+margin-left: 18%;
+}
+
+#overview img {
+background: #fafafa;
+padding: 5px;
+border: 2px solid silver;
+float: left;
+width: 100%;
+max-width: 800px;
+}
+
+#overview span {
+float: left;
+width: 90%;
+font-size: 2em;
+margin-top: 30px;
+}
+
+max-width: 1000px {
+#overview .img {
+width: 80%!important;
+margin-right: 0!important;
+margin-left: 10%!important;
+}
+
+#overview .lol {
+margin-top: 20px;
+padding-right: 100px;
+float: left;
+}
+}
+
+/* Блок с контактами */
+#contacts {
+width: 100%;
+float: left;
+padding-bottom: 40px;
+padding-top: 70px;
+border-top: 2px solid #ccc;
+background: #fff2ff;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: 'Roboto Slab', serif;
+font-weight: lighter;
+}
+
+#contacts h5 {font-size: 3em; color: #4f4f4f}
+
+#form_input {
+margin-top: 15px;
+font-size: 1.1em;
+}
+
+min-width: 1051px {
+#form_input {
+width: 35%;
+margin-left: 38%;
+}
+}
+
+max-width: 1050px {
+#form_input {
+width: 90%;
+margin-left: 10%;
+}
+}
+
+#form_input label {
+color: #505050;
+cursor: pointer;
+font-size: 1.4em;
+font-family: 'Roboto Slab', serif;
+}
+
+#form_input label > span {
+color: #e87e7e;
+}
+
+#form_input input,#form_input textarea {
+margin-bottom: 10px;
+width: 70%;
+padding: 10px 2%;
+border-radius: 7px;
+border: 2px solid silver;
+font-size: 1em;
+color: #4a4a4a;
+font-family: 'Roboto Slab', serif;
+}
+
+#form_input input:focus, #form_input textarea:focus {
+border-color: #333;
+}
+
+.btn {
+float: left;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: #ec6550;
+text-shadow: #454545 0 0 2px;
+cursor: pointer;
+color: white;
+font-family: 'Roboto Slab', serif;
+}
+
+.btn:hover {
+background-color: #c15443;
+}
+
+/* Вопросы и ответы */
+
+#faq {
+background-color: #fff;
+width: 100%;
+float: left;
+padding-top: 70px;
+padding-bottom: 70px;
+}
+
+min-width: 1500px {
+#faq div {
+width: 25%;
+margin-left: 120px;
+float: left;
+}
+}
+
+#faq .title {
+font-weight: lighter;
+color: #0033ff;
+margin-bottom: 40px;
+font-size: 1.5em;
+}
+
+#faq .heading {
+color: #318aa8;
+font-size: 1.4em;
+font-weight: normal;
+}
+
+#faq p {
+font-family: Arimo, Helvetica, sans-serif;
+-webkit-font-smoothing: antialiased;
+color: #5138b5;
+font-size: 1.2em;
+margin-bottom: 50px;
+}
+Файл не выбран
+Еще
+
